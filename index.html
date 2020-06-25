@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta name="description" content="Proyek MOBWEB untuk menampilkan film yang sedang trending dan untuk melakukan pencarian nama film yang diinginkan">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#317EFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Api</title>
+<!--     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/font1.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="icons/icon-72x72.png">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <style type="text/css">
+        /**{
+            font-family: 'Comic Neue', cursive;
+        }*/
+
+        *{
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        img{
+            max-width: 400px;
+            max-height: 400px;
+        }
+        body{
+            background-image: url('corona.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            width: 98vw;
+            height: 100vh;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">News Api</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Trending <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+
+                <!-- Trending -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 style="color: white;text-align: center">Trending News</h3>                        
+                    </div>
+                </div>
+                <div id="newsResults" class="row" style="display: flex;">
+
+
+                                                 
+                </div>
+                <!-- EndOfTrending -->
+                    
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+    </div>
+
+<script src = "script/index.js"></script>
+</body>
+</html>
