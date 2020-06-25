@@ -9,10 +9,9 @@ const STATIC_ASSETS = [
  './manifest.json',
  './corona.jpg',
  './script/index.js',
- './script/jquery-3.3.1.min.js',
- './script/materialize.min.js',
+ './script/jquery.min.js',
+ './script/bootstrap.min.js',
  './css/boostrap.min.css',
- './css/materialize.min.css',
  './images/icon/icon-48x48.png',
  './images/icon/icon-96x96.png',
  './images/icon/icon-144x144.png',
@@ -87,7 +86,7 @@ self.addEventListener('fetch', (event) => {
       });
     }).catch(() => {
       console.log('ini belum ada inet');
-      return caches.match('/offline.html');
+      return caches.match('./offline.html');
     })
   );
 });
