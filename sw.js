@@ -1,11 +1,12 @@
 var CACHE_STATIC_NAME = 'static-v7';
-DYNAMIC_CACHE_NAME = 'cache-dynamic-v2';
 
 const STATIC_ASSETS = [ 
   './',
  './index.html',
  './offline.html',
  './about.html',
+ './post.html',
+ './singlepost.html',
  './manifest.json',
  './corona.jpg',
  './script/index.js',
